@@ -210,3 +210,11 @@ ul.links a:hover { color: var(--red); }
 .foot-row a.social,.foot-row .league{display:inline-flex;align-items:center;gap:.45rem;color:var(--cream);text-decoration:none;font-size:.8rem}
 .foot-row a.social:hover{color:var(--red)}
 .foot-row .league img{opacity:.9;height:41px;width:auto}
+/* Canva imagery */
+header .wm{display:block;max-width:420px;margin:0 auto}
+.wordmark{width:100%;height:auto;display:block;border-radius:4px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.banner-img{height:10px;background:linear-gradient(90deg,#C8102E 0 33%,#F5F0E6 33% 40%,#0A1628 40%)}
+.hero{background:linear-gradient(180deg,rgba(10,22,40,.55),rgba(10,22,40,.85)),url(/img/hero-800.jpg) center/cover no-repeat;min-height:260px;display:flex;flex-direction:column;justify-content:flex-end;color:#F5F0E6}
+@media(min-width:700px){.hero{background-image:linear-gradient(180deg,rgba(10,22,40,.45),rgba(10,22,40,.85)),url(/img/hero.jpg);min-height:360px}}
+.card.alt{background:linear-gradient(rgba(245,240,230,.92),rgba(245,240,230,.92)),url(/img/hero-alt-800.jpg) center/cover}
