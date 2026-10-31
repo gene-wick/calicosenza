@@ -25,6 +25,13 @@ main{max-width:var(--max);margin:0 auto;padding:2.25rem 1.25rem 3.5rem}
 .hero p.sub{margin-top:.8rem;font-size:1.08rem;max-width:34ch;text-shadow:0 1px 8px rgba(0,0,0,.6)}
 .hero .disclaimer{text-align:left;color:#C9C1B3}
 .disclaimer{font-family:var(--sans);font-size:.78rem;letter-spacing:.02em;color:var(--muted);text-align:center;margin-top:.6rem}
+.match{background:var(--navy-2);border:1px solid var(--line);border-left:3px solid var(--red);border-radius:0 4px 4px 0;padding:1.1rem 1.35rem;margin:0 0 1.5rem}
+.match-kicker{font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
+.match-line{font-family:var(--display);font-size:1.35rem;letter-spacing:.04em;text-transform:uppercase;line-height:1.2}
+.match-meta{font-family:var(--sans);font-size:.9rem;color:var(--cream);margin-top:.4rem;letter-spacing:.03em}
+.match-note{font-size:.9rem;color:var(--muted);margin-top:.55rem}
+.match-note a{color:var(--cream)}
+.foot-row a.social+.social{margin-left:0}
 .card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--red);border-radius:0 4px 4px 0;padding:1.4rem 1.5rem;margin:0 0 1.25rem}
 .card h3{font-family:var(--display);font-weight:400;font-size:1.3rem;letter-spacing:.05em;text-transform:uppercase;margin-bottom:.5rem}
 .card.alt{background:linear-gradient(90deg,rgba(10,22,40,.97) 0%,rgba(10,22,40,.9) 60%,rgba(10,22,40,.6) 100%),url(/img/hero-alt-800.jpg) center/cover}
