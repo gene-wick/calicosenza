@@ -65,3 +65,5 @@ footer{background:var(--navy-2);border-top:3px solid var(--red);padding:2rem 1.2
 }
 @media(max-width:420px){nav{gap:.1rem 1.1rem}nav a{font-size:.8rem}.foot-row .league{border-left:0;padding-left:0}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.xfeed{max-width:600px;margin:2rem auto;padding:0 1rem}.xfeed h2{color:#c8102e;border-bottom:2px solid #0033a0;padding-bottom:.3rem}.xfeed .twitter-timeline{display:block;min-height:120px}
