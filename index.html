@@ -15,6 +15,7 @@
 <meta name="twitter:image" content="https://calicosenza.com/img/share-card-1080.png">
 <link rel="stylesheet" href="/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐺</text></svg>">
+<link rel="preload" as="image" href="/img/hero-canva-1600.webp" imagesrcset="/img/hero-canva-800.webp 800w, /img/hero-canva-1600.webp 1600w" imagesizes="100vw">
 </head>
 <body>
 <header>
@@ -29,8 +30,23 @@
   <a href="/writing/">Writing</a>
   <a href="/merch/">Merch</a>
 </nav>
+<details class="xfeed" id="xfeed">
+  <summary>Live from @calicosenza</summary>
+  <div class="xfeed-body">
+  <a class="twitter-timeline" data-height="520" data-theme="dark" data-dnt="true" data-chrome="noheader nofooter transparent" href="https://twitter.com/calicosenza">Posts by @calicosenza</a>
+  <div class="xfallback" id="xfallback" hidden><article class="xcard"><p class="xmeta">@calicosenza · Sun Nov 1 · 1:46 PM PT</p><p>FT · Cosenza 1–0 Inter U23. Dalmazzi header, 26′. First home win of the season at the Marulla.</p><a href="/writing/wolves-come-home-at-dawn/">Read the longer take →</a></article><article class="xcard"><p class="xmeta">@calicosenza · Sun Nov 1 · 11:05 AM PT</p><p>Not a club account. Independent supporters’ research from SF — tactics, the curva, who owns the ground.</p></article><article class="xcard"><p class="xmeta">@calicosenza · Sun Nov 1 · 8:24 AM PT</p><p>Cali → Calabria. Independent coverage — place, tactics, the curva. Home base: calicosenza.com</p></article></div>
+  <a class="btn xfollow" href="https://x.com/calicosenza" target="_blank" rel="noopener">Follow @calicosenza</a>
+  </div>
+</details>
+<script>
+(function(){var d=document.getElementById('xfeed');if(matchMedia('(min-width:720px)').matches)d.open=true;
+var s=document.createElement('script');s.async=1;s.src='https://platform.twitter.com/widgets.js';s.onerror=fb;document.body.appendChild(s);
+function fb(){if(d.querySelector('iframe'))return;var t=d.querySelector('.twitter-timeline');if(t)t.style.display='none';document.getElementById('xfallback').hidden=false;}
+setTimeout(fb,4000);})();
+</script>
 <main>
-  <div class="hero">
+  <div class="hero hero-canva">
+    <img class="hero-img" src="/img/hero-canva-1600.webp" srcset="/img/hero-canva-800.webp 800w, /img/hero-canva-1600.webp 1600w" sizes="(min-width:760px) 760px, 100vw" width="1600" height="900" alt="Cali Cosenza Calcio Club artwork: red and cream diagonal stripes over navy" fetchpriority="high">
     <h2>From Cali to Calabria</h2>
     <p class="sub">Unofficial, independent Cosenza supporters’ project from San Francisco.</p>
     <p class="disclaimer">Not affiliated with, endorsed by, or connected to Cosenza Calcio.</p>
@@ -68,6 +84,8 @@
   </div>
 
   <h2 class="section">Official club</h2>
+<h2 class="section">Visuals</h2>
+<div class="gallery"><figure><img src="/img/gallery/crest-cali-cosenza-600.webp" srcset="/img/gallery/crest-cali-cosenza-600.webp 600w, /img/gallery/crest-cali-cosenza.webp 1200w" sizes="(min-width:720px) 240px, 50vw" alt="Cali Cosenza Calcio Club fan crest: a wolf over the CC monogram, palms and the California coast" loading="lazy" decoding="async"><figcaption>Our crest — California to Calabria</figcaption></figure><figure><img src="/img/gallery/share-card-600.webp" srcset="/img/gallery/share-card-600.webp 600w, /img/gallery/share-card.webp 1200w" sizes="(min-width:720px) 240px, 50vw" alt="Cali Cosenza Calcio Club card: notes from California on Cosenza, Serie B and Serie C" loading="lazy" decoding="async"><figcaption>Notes from California</figcaption></figure><figure><img src="/img/gallery/banner-600.webp" srcset="/img/gallery/banner-600.webp 600w, /img/gallery/banner.webp 1200w" sizes="(min-width:720px) 240px, 50vw" alt="Cali Cosenza Calcio Club banner in cream, navy and red" loading="lazy" decoding="async"><figcaption>The banner</figcaption></figure><figure><img src="/img/gallery/stripes-red-600.webp" srcset="/img/gallery/stripes-red-600.webp 600w, /img/gallery/stripes-red.webp 1200w" sizes="(min-width:720px) 240px, 50vw" alt="Navy, red and cream diagonal stripes with red circles" loading="lazy" decoding="async"><figcaption>Rossoblù geometry</figcaption></figure><figure><img src="/img/gallery/stripes-dots-600.webp" srcset="/img/gallery/stripes-dots-600.webp 600w, /img/gallery/stripes-dots.webp 1200w" sizes="(min-width:720px) 240px, 50vw" alt="Fine red and navy pinstripes with a navy circle" loading="lazy" decoding="async"><figcaption>Pinstripe study</figcaption></figure><figure><img src="/img/gallery/diagonal-600.webp" srcset="/img/gallery/diagonal-600.webp 600w, /img/gallery/diagonal.webp 1200w" sizes="(min-width:720px) 240px, 50vw" alt="Cream, red and navy diagonal panels" loading="lazy" decoding="async"><figcaption>Diagonals</figcaption></figure></div>
   <ul class="links">
     <li><a href="https://www.ilcosenza.it/" target="_blank" rel="noopener">ilcosenza.it</a> — official site</li>
     <li><a href="https://x.com/CosenzaOfficial" target="_blank" rel="noopener">@CosenzaOfficial on X</a></li>
@@ -82,11 +100,6 @@
     <li><a href="/writing/">First up: Exile at the Scida — Who Owns Cosenza’s Home?</a></li>
     <li><a href="https://halamadridstreet.com/writing/" target="_blank" rel="noopener">More long-form writing (Hala Madrid Street)</a></li>
   </ul>
-<section class="xfeed">
-  <h2>Live from @calicosenza</h2>
-  <a class="twitter-timeline" data-height="560" data-theme="dark" data-dnt="true" data-chrome="noheader nofooter transparent" href="https://twitter.com/calicosenza">Posts by @calicosenza</a>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</section>
 </main>
 <footer>
   <div class="foot-row">

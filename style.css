@@ -67,3 +67,25 @@ footer{background:var(--navy-2);border-top:3px solid var(--red);padding:2rem 1.2
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 
 .xfeed{max-width:600px;margin:2rem auto;padding:0 1rem}.xfeed h2{color:#c8102e;border-bottom:2px solid #0033a0;padding-bottom:.3rem}.xfeed .twitter-timeline{display:block;min-height:120px}
+
+.hero.hero-canva{background:none;padding:0;min-height:0;display:block}
+.hero-canva .hero-img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.hero-canva h2,.hero-canva p{position:relative}
+.hero-canva .hero-txt{}
+.hero-canva>h2,.hero-canva>p{padding:0 1.5rem}
+.hero-canva>h2{margin-top:-4.2rem;padding-top:1rem;background:linear-gradient(180deg,rgba(10,22,40,0),rgba(10,22,40,.95) 45%)}
+.hero-canva>p:last-child{padding-bottom:1.4rem}
+.hero-canva{background:#0A1628}
+.art-head{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:4px;border-bottom:3px solid var(--red);margin:0 0 1.5rem}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-bottom:2rem}
+.gallery figure{margin:0}
+.gallery img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;border:1px solid var(--line);background:var(--navy-2)}
+.gallery figcaption{font-family:var(--sans);font-size:.75rem;color:var(--muted);margin-top:.35rem}
+@media(min-width:720px){.gallery{grid-template-columns:repeat(3,1fr)}}
+details.xfeed{max-width:760px;margin:0 auto 1rem;padding:0 1rem}
+details.xfeed summary{cursor:pointer;font-family:var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--cream);padding:.6rem .9rem;background:var(--navy-2);border:1px solid var(--line);border-left:3px solid var(--red);border-radius:0 4px 4px 0;list-style:none}
+details.xfeed summary::after{content:" ▾";color:var(--red)}
+details.xfeed[open] summary::after{content:" ▴"}
+.xfeed-body{padding:.8rem 0}
+.xcard{background:var(--navy-2);border:1px solid var(--line);border-radius:4px;padding:.8rem 1rem;margin-bottom:.6rem}
+.xcard .xmeta{font-family:var(--sans);font-size:.72rem;color:var(--muted);margin-bottom:.3rem}
