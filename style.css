@@ -97,3 +97,14 @@ details.xfeed[open] summary::after{content:" ▴"}
 .layout>details.xfeed summary{pointer-events:none}
 .layout>details.xfeed summary::after{content:""}
 }
+.brand{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap}
+.lupi-crest{width:96px;height:auto;border-radius:6px;box-shadow:0 4px 18px rgba(0,0,0,.5)}
+@media(max-width:480px){.lupi-crest{width:68px}}
+.lupi-band{background:var(--navy-2);border:1px solid var(--line);border-top:3px solid var(--red);border-radius:4px;overflow:hidden;margin:2rem 0}
+.lupi-band img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.lupi-txt{padding:1.1rem 1.35rem 1.4rem}
+.lupi-txt h2{font-family:var(--display);font-weight:400;letter-spacing:.06em;text-transform:uppercase;font-size:1.6rem;color:var(--cream)}
+.brand>.wm{width:auto;max-width:min(60vw,272px);flex:0 1 auto;margin:0}
+.brand>.wm img{width:100%;height:auto}
+.brand .lupi-crest{width:104px;flex:0 0 auto}
+@media(max-width:480px){.brand .lupi-crest{width:72px}}
