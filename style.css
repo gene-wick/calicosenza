@@ -173,3 +173,29 @@ footer{text-align:center;border-top:4px solid var(--red);padding:44px 18px 36px;
 .foot{display:block;font-size:clamp(1.6rem,7vw,2.6rem);color:var(--red2);letter-spacing:.05em;margin-bottom:14px}
 @media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}.chero{padding:70px 24px 54px}.chero h1 span{display:inline}}
 .tile img.fit{object-fit:contain;padding:10px}
+/* about + writing card layout */
+.about-crest img{box-shadow:0 0 0 4px var(--blue),0 10px 40px rgba(0,0,0,.6)}
+main .kick+h2.section{margin-top:0}
+.about-bio{display:grid;gap:18px;margin:18px 0}
+.about-bio p{margin:0;background:#0b0f1a;border:2px solid #1b2a4a;border-top:4px solid var(--red);padding:18px 20px;line-height:1.7}
+.about-bio p.it{border-top-color:var(--blue);font-style:italic;color:#d9d4c7}
+.about-bio p strong:first-child{display:block;font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.08em;color:var(--red2);font-size:1.25rem;margin-bottom:6px}
+.standpoint{background:#05070d;border:2px solid #1b2a4a;border-left:4px solid var(--blue);padding:18px 20px;margin:18px 0;line-height:1.7}
+.standpoint strong:first-child{display:block;font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.08em;color:#8fb0ff;font-size:1.25rem;margin-bottom:6px}
+.card{padding:18px 20px 22px;margin:0 0 24px}
+.card.feat{padding-top:0}.card .cover{display:block;width:calc(100% + 40px);margin:0 -20px 16px;aspect-ratio:16/9;object-fit:cover}
+.card h3{font-size:1.5rem;margin-bottom:6px}
+.pillars li{font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:1.05rem}
+.grid.g4 .tile img{aspect-ratio:auto;object-fit:contain;background:#000}
+@media(min-width:720px){.grid.g4{grid-template-columns:repeat(2,1fr)}}
+.lang{position:absolute;right:12px;top:10px;z-index:45;font-family:var(--display);letter-spacing:.12em;font-size:.85rem}
+.lang a{color:var(--cream);text-decoration:none;padding:4px 8px;border:2px solid #1b2a4a}.lang a[aria-current]{background:var(--red);border-color:var(--red)}
+body{position:relative}
+/* reusable essay figure */
+.efig{margin:28px 0;border:2px solid #1b2a4a;border-top:4px solid var(--red);background:#0b0f1a}
+.efig img{display:block;width:100%;height:auto;object-fit:cover}
+.efig figcaption{padding:10px 14px 12px;font-family:Georgia,serif;font-size:.95rem;color:#d9d4c7;line-height:1.5}
+.efig .credit{display:block;margin-top:5px;font-size:.78rem;color:#9b958a}
+.efig .credit a{color:#8fb0ff;text-underline-offset:2px}
+.efig.blue{border-top-color:var(--blue)}
+.lang{right:auto;left:50%;transform:translateX(-50%);top:9px}

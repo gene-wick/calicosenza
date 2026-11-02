@@ -8,8 +8,14 @@
 <link rel="stylesheet" href="/style.css">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/lupi/favicon-32.png">
 <link rel="apple-touch-icon" href="/img/lupi/apple-touch-icon.png">
+<link rel="alternate" hreflang="en" href="https://calicosenza.com/about/">
+<link rel="alternate" hreflang="it" href="https://calicosenza.com/it/about/">
+<link rel="alternate" hreflang="x-default" href="https://calicosenza.com/about/">
+<script>try{if(localStorage.getItem("cc-lang")==="it"&&!document.referrer.includes("/it/"))location.replace("/it/"+location.pathname.replace(/^\//,""))}catch(e){}</script>
 </head>
 <body>
+<div class="lang"><a href="/about/" hreflang="en" lang="en" aria-current="true">EN</a> <a href="/it/about/" hreflang="it" lang="it">IT</a></div>
+
 <a class="skip" href="#main">Skip to content</a>
 <div class="wbar">
   <a class="brand" href="/"><img src="/img/lupi/crest-240.webp" width="34" height="34" alt="">&larr; Cali Cosenza Calcio</a>
@@ -23,6 +29,7 @@
 </nav>
 <main id="main">
 <figure class="about-crest"><img src="/img/lupi/crest-800.webp" srcset="/img/lupi/crest-240.webp 240w, /img/lupi/crest-800.webp 800w" sizes="(min-width:760px) 320px, 70vw" alt="Lupi di California crest: wolf, California palms and San Sosti in Calabria" width="800" height="800"></figure>
+  <p class="kick">Lupi di California · About</p>
   <h2 class="section">About</h2>
   <div class="about-bio">
     <p><strong>Direction.</strong> Cali Cosenza Calcio is an independent supporters’ research project on Cosenza Calcio, written in Santa Barbara, California, by a fan with family roots in Calabria on his mother’s side. It is not affiliated with, endorsed by, or connected to Cosenza Calcio. It leads with one long piece, <em>Exile at the Scida: Who Owns Cosenza’s Home?</em>, on the stadium, public land and private rent. Think of it as a place, not a blog: a small archive of footnoted essays, each opening with an Italian abstract, under an original mark rather than the club crest.</p>
@@ -50,5 +57,6 @@
   Cali Cosenza Calcio is an unofficial, independent supporters’ research project. It is not affiliated with Cosenza Calcio or Lega Pro. No club crest is used; the Serie C logo appears only as a league reference.<br>
   © Gene Moggia · #CaliToCalabria
 </footer>
+<script>try{document.querySelectorAll(".lang a").forEach(function(a){a.addEventListener("click",function(){localStorage.setItem("cc-lang",a.getAttribute("hreflang"))})})}catch(e){}</script>
 </body>
 </html>

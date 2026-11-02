@@ -17,8 +17,14 @@
 <link rel="stylesheet" href="/style.css">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/lupi/favicon-32.png">
 <link rel="apple-touch-icon" href="/img/lupi/apple-touch-icon.png"><link rel="preload" as="image" href="/img/lupi/hero-1600.webp" imagesrcset="/img/lupi/hero-800.webp 800w, /img/lupi/hero-1600.webp 1600w" imagesizes="(min-width:1024px) 640px, 100vw">
+<link rel="alternate" hreflang="en" href="https://calicosenza.com/">
+<link rel="alternate" hreflang="it" href="https://calicosenza.com/it/">
+<link rel="alternate" hreflang="x-default" href="https://calicosenza.com/">
+<script>try{if(localStorage.getItem("cc-lang")==="it"&&!document.referrer.includes("/it/"))location.replace("/it/"+location.pathname.replace(/^\//,""))}catch(e){}</script>
 </head>
 <body>
+<div class="lang"><a href="/" hreflang="en" lang="en" aria-current="true">EN</a> <a href="/it/" hreflang="it" lang="it">IT</a></div>
+
 <a class="skip" href="#main">Skip to content</a>
 <header class="chero">
   <img class="ccrest" src="/img/lupi/crest-240.webp" width="240" height="240" alt="Lupi di California round crest: a wolf with palms and San Sosti, Cali Cosenza Calcio Club">
@@ -126,5 +132,6 @@
   Cali Cosenza Calcio is an unofficial, independent supporters’ research project. It is not affiliated with Cosenza Calcio or Lega Pro. No club crest is used; the Serie C logo appears only as a league reference.<br>
   © Gene Moggia · #CaliToCalabria
 </footer>
+<script>try{document.querySelectorAll(".lang a").forEach(function(a){a.addEventListener("click",function(){localStorage.setItem("cc-lang",a.getAttribute("hreflang"))})})}catch(e){}</script>
 </body>
 </html>
