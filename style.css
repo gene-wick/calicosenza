@@ -89,3 +89,11 @@ details.xfeed[open] summary::after{content:" ▴"}
 .xfeed-body{padding:.8rem 0}
 .xcard{background:var(--navy-2);border:1px solid var(--line);border-radius:4px;padding:.8rem 1rem;margin-bottom:.6rem}
 .xcard .xmeta{font-family:var(--sans);font-size:.72rem;color:var(--muted);margin-bottom:.3rem}
+
+@media(min-width:1024px){
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:2rem;max-width:calc(var(--max) + 380px);margin:0 auto;padding:0 1.25rem;align-items:start}
+.layout>main{grid-column:1;grid-row:1;max-width:none;margin:0;padding-left:0;padding-right:0}
+.layout>details.xfeed{grid-column:2;grid-row:1;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto;margin:2.25rem 0 0;padding:0;max-width:none}
+.layout>details.xfeed summary{pointer-events:none}
+.layout>details.xfeed summary::after{content:""}
+}
