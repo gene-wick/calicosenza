@@ -199,3 +199,6 @@ body{position:relative}
 .efig .credit a{color:#8fb0ff;text-underline-offset:2px}
 .efig.blue{border-top-color:var(--blue)}
 .lang{right:auto;left:50%;transform:translateX(-50%);top:9px}
+.gallery .wp-dl{display:block;font-family:var(--sans);font-size:.7rem;color:var(--muted);margin-top:.2rem;line-height:1.6}
+.gallery .wp-dl a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line);padding:.15rem 0}
+.gallery .wp-dl a:hover,.gallery .wp-dl a:focus{color:inherit;border-color:currentColor}
