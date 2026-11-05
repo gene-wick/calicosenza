@@ -23,12 +23,20 @@ for p in data:
                   "url": f"https://x.com/{HANDLE}/status/{p['id']}"})
 json.dump({"handle": HANDLE, "updated": datetime.now(timezone.utc).isoformat(), "posts": posts},
           open(os.path.join(site, "feed.json"), "w"), ensure_ascii=False, indent=1)
-def card(p):
-    return (f'<article class="xcard"><p class="xmeta">@{HANDLE} · {p["time"]}</p><p>{html.escape(p["text"]).replace(chr(10), "<br>")}</p>'
-            f'<a href="{p["url"]}" target="_blank" rel="noopener">View on X →</a></article>')
-cards = "".join(card(p) for p in posts)
-pages = ["index.html", "it/index.html", "writing/index.html", "writing/wolves-come-home-at-dawn/index.html"]
+GIORNI = {"Mon": "lun", "Tue": "mar", "Wed": "mer", "Thu": "gio", "Fri": "ven", "Sat": "sab", "Sun": "dom"}
+MESI = {"Jan": "gen", "Feb": "feb", "Mar": "mar", "Apr": "apr", "May": "mag", "Jun": "giu", "Jul": "lug", "Aug": "ago", "Sep": "set", "Oct": "ott", "Nov": "nov", "Dec": "dic"}
+def it_time(t):
+    d, m, rest = t.split(" ", 2)
+    n, rest = rest.split(" ", 1)
+    return f"{GIORNI.get(d, d)} {n} {MESI.get(m, m)} {rest}"
+def card(p, it=False):
+    t = it_time(p["time"]) if it else p["time"]
+    return (f'<article class="xcard"><p class="xmeta">@{HANDLE} · {t}</p><p>{html.escape(p["text"]).replace(chr(10), "<br>")}</p>'
+            f'<a href="{p["url"]}" target="_blank" rel="noopener">{"Vedi su X" if it else "View on X"} →</a></article>')
+pages = ["index.html", "it/index.html", "writing/index.html", "writing/wolves-come-home-at-dawn/index.html",
+         "it/writing/index.html", "it/writing/wolves-come-home-at-dawn/index.html"]
 for rel in pages:
+    cards = "".join(card(p, rel.startswith("it/")) for p in posts)
     f = os.path.join(site, rel); s = open(f).read()
     if "<!-- XFEED:START -->" not in s:  # first run: wrap the existing fallback div
         s = re.sub(r'(<div class="xfallback" id="xfallback">)(.*?)(</div>)', lambda mm: mm.group(1) + "<!-- XFEED:START -->" + mm.group(2) + "<!-- XFEED:END -->" + mm.group(3), s, count=1, flags=re.S)

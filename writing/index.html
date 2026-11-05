@@ -8,8 +8,13 @@
 <link rel="stylesheet" href="/style.css">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/lupi/favicon-32.png">
 <link rel="apple-touch-icon" href="/img/lupi/apple-touch-icon.png">
+<link rel="alternate" hreflang="en" href="https://calicosenza.com/writing/">
+<link rel="alternate" hreflang="it" href="https://calicosenza.com/it/writing/">
+<link rel="alternate" hreflang="x-default" href="https://calicosenza.com/writing/">
+<script>try{if(localStorage.getItem("cc-lang")==="it"&&!document.referrer.includes("/it/"))location.replace("/it/"+location.pathname.replace(/^\//,""))}catch(e){}</script>
 </head>
 <body>
+<div class="lang"><a href="/writing/" hreflang="en" lang="en" aria-current="true">EN</a> <a href="/it/writing/" hreflang="it" lang="it">IT</a></div>
 <a class="skip" href="#main">Skip to content</a>
 <div class="wbar">
   <a class="brand" href="/"><img src="/img/lupi/crest-240.webp" width="34" height="34" alt="">&larr; Cali Cosenza Calcio</a>
@@ -76,5 +81,6 @@
   Cali Cosenza Calcio is an unofficial, independent supporters’ research project. It is not affiliated with Cosenza Calcio or Lega Pro. No club crest is used; the Serie C logo appears only as a league reference.<br>
   © Gene Moggia · #CaliToCalabria
 </footer>
+<script>try{document.querySelectorAll(".lang a").forEach(function(a){a.addEventListener("click",function(){localStorage.setItem("cc-lang",a.getAttribute("hreflang"))})})}catch(e){}</script>
 </body>
 </html>
